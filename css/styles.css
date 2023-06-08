@@ -812,10 +812,7 @@ img {
   text-align: center;
 }
 /* Clients */
-/* .clients-main {
-  padding-bottom: 96px;
-  padding-top: 96px;
-} */
+
 .clients {
   display: flex;
   flex-wrap: wrap;
@@ -1237,7 +1234,9 @@ img {
   .mail {
     margin-bottom: 12px;
   }
-
+  .backdrop {
+    background: rgba(46, 47, 66, 0.4);
+  }
   .overlay {
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/heroimg-tablet.jpg);
