@@ -115,7 +115,6 @@ img {
 /* ЛОГОТИП */
 .header-logo {
   color: var(--background-color-hearo);
-  margin-right: 76px;
 }
 .logo-web {
   color: var(--primary-color);
@@ -186,19 +185,9 @@ img {
 }
 
 /* ОСОБЛИВОСТІ */
-.features-item {
-  display: flex;
-  height: 112px;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 24px;
-  display: none;
-}
 
-.features {
-  padding: 120px 0;
+.features-item {
+  display: none;
 }
 .features-list {
   display: flex;
@@ -424,10 +413,10 @@ img {
 .modal-icon-close {
   fill: currentColor;
 }
-/* .backdrop {
+.backdrop {
   background: rgba(46, 47, 66, 0.4);
 }
-.modal {
+/*.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -728,7 +717,7 @@ img {
 .item-work {
   position: relative;
   display: flex;
-}
+} */
 
 /* НАША КОМАНДА */
 .team {
@@ -823,10 +812,10 @@ img {
   text-align: center;
 }
 /* Clients */
-.clients-main {
+/* .clients-main {
   padding-bottom: 96px;
   padding-top: 96px;
-}
+} */
 .clients {
   display: flex;
   flex-wrap: wrap;
@@ -866,14 +855,14 @@ img {
 /* ФУТЕР */
 .footer-main {
   background: var(--background-color-hearo);
-  padding: 100px 0;
+  padding: 97px 0;
   height: 664px;
 }
 .footer > .container {
   margin: auto;
-  padding-top: 97px;
-  padding-bottom: 96px;
-  padding-left: 156px;
+  /* padding-top: 97px;
+  padding-bottom: 96px; */
+  /* padding-left: 156px; */
 }
 .adress-footer {
   width: 268px;
@@ -942,10 +931,6 @@ img {
   color: var(--background-color-header-team);
   margin-bottom: 16px;
 }
-/* .footer {
-  display: flex;
-  align-items: start;
-} */
 
 .footer-social-list {
   display: flex;
@@ -987,9 +972,6 @@ img {
   margin-bottom: 16px;
 }
 .footer-input {
-  /* position: absolute;
-  top: 40px;
-  left: -70px; */
   width: 398px;
   height: 40px;
   padding-left: 16px;
@@ -1192,7 +1174,10 @@ img {
     gap: 40px;
   }
   .header-list {
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .header-logo {
     margin-right: 120px;
@@ -1256,7 +1241,7 @@ img {
   .overlay {
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/heroimg-tablet.jpg);
-    max-width: 1768px;
+    max-width: 768px;
     height: 436px;
   }
   .headline {
@@ -1361,6 +1346,127 @@ img {
   .modal {
     padding-left: 23px;
     padding-right: 25px;
+  }
+}
+
+/* DESCTOP */
+@media screen and (min-width: 1158px) {
+  .auth-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-logo {
+    margin-right: 76px;
+  }
+  .header-nav-list {
+    margin-right: 0;
+  }
+  .header-list {
+    justify-content: space-around;
+  }
+
+  .overlay {
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/heroimg-desctop.jpg);
+    max-width: 1440px;
+    height: 600px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .features {
+    padding: 120px 0;
+  }
+  .features-item {
+    display: flex;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 24px;
+  }
+  .features-list-item {
+    width: 264px;
+  }
+  .work {
+    display: block;
+  }
+  .work {
+    width: 1158px;
+    margin: auto;
+    padding-bottom: 120px;
+  }
+  .title-work,
+  .title-team {
+    margin-top: 0;
+    margin-bottom: 72px;
+    margin-right: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    letter-spacing: 0.02em;
+    color: var(--background-color-hearo);
+  }
+  .work-list,
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .work-list .item-work + .item-work {
+    margin-left: 24px;
+  }
+  .item-work {
+    position: relative;
+    display: flex;
+  }
+  .team-main {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .clients-main {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
+  .clients {
+    gap: 24px;
+  }
+  .footer-main {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .adress-footer {
+    margin-right: 120px;
+  }
+  .social-footer {
+    margin-right: 80px;
+  }
+  .footer {
+    justify-content: start;
+    column-gap: 0;
+    row-gap: 0;
+  }
+  .footer-form {
+    display: flex;
+
+    position: relative;
+    bottom: 110px;
+    left: 676px;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+
+  .btn-footer {
+    position: absolute;
+    top: 40px;
+    left: 288px;
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
   }
 }
 
