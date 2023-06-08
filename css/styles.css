@@ -508,8 +508,55 @@ img {
 } */
 */
 /* МОДАЛЬНЕ ВІКНО */
-
+/* Modal */
 .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  scale: 1;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms var(--timing-cub), scale 250ms var(--timing-cub);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  scale: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-width: 392px;
+  min-height: 584px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 72px;
+  transform: translateX(-50%) translateY(-50%);
+}
+.modal-btn {
+  position: absolute;
+  display: block;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal-icon-close {
+  fill: currentColor;
+}
+/* .backdrop {
   background: rgba(46, 47, 66, 0.4);
 }
 .modal {
@@ -517,14 +564,14 @@ img {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  width: 528px;
-  min-height: 581px;
-  padding: 40px;
+  width: 392px;
+  min-height: 584px;
+  
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
+} */
 .modal-title {
   display: block;
   font-weight: 500;
@@ -538,11 +585,11 @@ img {
 .form-callback {
   display: block;
   position: relative;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .form-input {
-  padding: 0;
-  padding-left: 38px;
+  /* padding: 0; */
+  padding-left: 40px;
   width: 100%;
   height: 40px;
 
@@ -557,7 +604,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  margin-bottom: 20px;
+
   letter-spacing: 0.04em;
   margin-bottom: 4px;
   color: var(--placeholder-color);
@@ -628,6 +675,14 @@ img {
 }
 .checkbox-label {
   user-select: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc (14px/12px);
+
+  letter-spacing: 0.04em;
+
+  color: #8e8f99;
 }
 /* Option */
 
@@ -706,6 +761,7 @@ img {
   letter-spacing: 0.04em;
   cursor: pointer;
   margin-top: 24px;
+  margin-bottom: 24px;
 
   color: var(--background-color-header-team);
 }
@@ -1232,52 +1288,6 @@ img {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
-}
-/* Modal */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  scale: 1;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms var(--timing-cub), scale 250ms var(--timing-cub);
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  scale: 0;
-  pointer-events: none;
-}
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  min-width: 528px;
-  min-height: 581px;
-  background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-
-  transform: translateX(-50%) translateY(-50%);
-}
-.modal-btn {
-  position: absolute;
-  display: block;
-  top: 8px;
-  right: 8px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-.modal-icon-close {
-  fill: currentColor;
 }
 
 /* для телефонів 2 */
