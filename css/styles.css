@@ -1022,6 +1022,7 @@ img {
   fill: var(--background-color-header-team);
   margin-left: 16px;
 }
+
 /* Телефон */
 @media screen and (max-width: 767px) {
   .features > .container {
@@ -1185,6 +1186,12 @@ img {
   .social-mobile-icon {
     fill: currentColor;
   }
+  .adress-social {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    justify-content: center;
+  }
 }
 
 /*ПЛАНШЕТ */
@@ -1193,9 +1200,7 @@ img {
   .mobile-meny-open-button {
     display: none;
   }
-  .form {
-    display: flex;
-  }
+
   .mobile-menu {
     display: none;
   }
@@ -1349,7 +1354,7 @@ img {
     text-align: start;
   }
   .form-title {
-    /* text-align: start; */
+    text-align: center;
     margin-bottom: 16px;
     margin-left: 0;
     margin-right: 0;
@@ -1357,43 +1362,37 @@ img {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px; */
-    /* width: 453px; */
+
+    width: 75px;
   }
   .footer-form-form {
     display: flex;
     gap: 24px;
-  }
-  .footer-form-input {
-    display: flex;
+    width: 496px;
+    justify-content: start;
   }
 
+  .adress-social {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+  }
   .footer-input {
-    width: 262px;
+    width: 264px;
     margin-bottom: 0;
   }
 
   .footer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 24px;
+    flex-direction: column;
     row-gap: 72px;
-    justify-content: center;
   }
-  /* .footer-form {
-    display: block;
-    width: 453px;
-  } */
-  /* .footer-form {
-    margin-top: 0;
-    position: relative;
-    right: 24px;
+  .footer-form {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .btn-footer {
-    position: absolute;
-    top: 40px;
-    left: 292px;
-  } */
   .modal {
     padding-left: 23px;
     padding-right: 25px;
