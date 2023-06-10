@@ -1362,6 +1362,10 @@ img {
     row-gap: 72px; */
     /* width: 453px; */
   }
+  .footer-form-form {
+    display: flex;
+    gap: 24px;
+  }
   .footer-form-input {
     display: flex;
   }
@@ -1379,10 +1383,10 @@ img {
     row-gap: 72px;
     justify-content: center;
   }
-  .footer-form {
+  /* .footer-form {
     display: block;
     width: 453px;
-  }
+  } */
   /* .footer-form {
     margin-top: 0;
     position: relative;
