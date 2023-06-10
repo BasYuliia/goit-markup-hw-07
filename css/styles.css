@@ -977,12 +977,9 @@ img {
   color: var(--background-color-header-team);
   margin-bottom: 16px;
 }
-.footer-form-input {
-  display: flex;
-  justify-content: center;
-}
+
 .footer-input {
-  max-width: 398px;
+  width: 398px;
   height: 40px;
   padding-left: 16px;
   background: var(--background-color-footer);
