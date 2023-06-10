@@ -157,7 +157,7 @@ img {
 
   margin: 0 auto;
   margin-bottom: 72px;
-  width: 320px;
+  /* width: 320px; */
 }
 .main-button {
   font-family: inherit;
@@ -820,6 +820,10 @@ img {
   align-items: center;
   gap: 16px;
 }
+.clients-main {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
 .clients-title {
   font-style: normal;
   font-weight: 700;
@@ -863,9 +867,19 @@ img {
   flex-direction: column;
   row-gap: 72px;
 }
-  .social-footer {
+
+.social-footer {
   width: 208px;
 }
+/* .footer-form-input {
+  max-width: 398px;
+}
+.footer-field {
+  max-width: 398px;
+}
+.footer-input {
+  max-width: 398px;
+} */
 .footer-logo {
   display: flex;
   color: var(--light-color);
@@ -944,6 +958,9 @@ img {
 .footer-icon {
   fill: currentColor;
 }
+.form {
+  display: flex;
+}
 .footer-form {
   display: flex;
   flex-direction: column;
@@ -965,7 +982,7 @@ img {
   justify-content: center;
 }
 .footer-input {
-  width: 398px;
+  max-width: 398px;
   height: 40px;
   padding-left: 16px;
   background: var(--background-color-footer);
@@ -974,6 +991,7 @@ img {
   border-radius: 4px;
   color: #ffffff;
   margin-bottom: 16px;
+  justify-content: center;
 }
 
 .footer-input::placeholder {
@@ -984,21 +1002,14 @@ img {
   letter-spacing: 0.04em;
   color: var(--background-color-header-team);
 }
-.form-field {
-  position: relative; */
-  /* width: 398px;
-  height: 40px;*/
-}
+
 .btn-footer {
-  /* position: relative;
-  top: 16px;
-  left: 131px; */
   min-width: 165px;
   height: 40px;
   display: flex;
-  /* justify-content: center; */
+
   align-items: center;
-  margin: 0 auto;
+
   letter-spacing: 0.04em;
   color: var(--background-color-header-team);
   background: var(--primary-color);
@@ -1016,6 +1027,13 @@ img {
 }
 /* Телефон */
 @media screen and (max-width: 767px) {
+  .features > .container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .client-link {
+    width: 190px;
+  }
   .header-nav-list {
     display: none;
   }
@@ -1027,11 +1045,19 @@ img {
     width: 268px;
   }
   .social-footer {
-  width: 208px;
+    width: 208px;
 
-  margin-left: auto;
-  margin-right: auto;
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-field {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn-footer {
+    margin: 0 auto;
+  }
+
   .mobile-meny-open-button {
     border: none;
     background-color: transparent;
@@ -1169,6 +1195,9 @@ img {
 @media screen and (min-width: 768px) {
   .mobile-meny-open-button {
     display: none;
+  }
+  .form {
+    display: flex;
   }
   .mobile-menu {
     display: none;
@@ -1317,26 +1346,28 @@ img {
     text-align: start;
     margin: 0;
   }
-  
+
   .footer-title {
     display: block;
     text-align: start;
   }
   .form-title {
-    text-align: start;
-
-    flex-direction: row;
+    /* text-align: start; */
+    margin-bottom: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    /* flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 72px;
-    width: 453px;
+    row-gap: 72px; */
+    /* width: 453px; */
   }
   .footer-form-input {
     display: flex;
   }
 
   .footer-input {
-    width: 268px;
+    width: 262px;
     margin-bottom: 0;
   }
 
@@ -1347,6 +1378,10 @@ img {
     column-gap: 24px;
     row-gap: 72px;
     justify-content: center;
+  }
+  .footer-form {
+    display: block;
+    width: 453px;
   }
   /* .footer-form {
     margin-top: 0;
@@ -1471,31 +1506,39 @@ img {
     justify-content: start;
     column-gap: 0;
     row-gap: 0;
+    display: flex;
   }
+  .form-field {
+    width: 264px;
+  }
+  .form-input {
+    width: 264px;
+  }
+  .footer-form-input {
+    display: flex;
+    flex-direction: row;
+    column-gap: 24px;
+  }
+  .footer-form {
+    justify-content: start;
+  }
+
+  /* .footer-form-input {
+    display: flex;
+  } */
+  /* .form {
+    display: flex;
+  } */
   .footer-main {
     height: 312px;
   }
-  .footer-form {
-    display: flex;
 
-    position: relative;
-    bottom: 110px;
-    left: 676px;
-  }
-
-  .footer-input {
+  /* .footer-input {
     width: 264px;
-  }
-
-  .btn-footer {
-    position: absolute;
-    top: 40px;
-    left: 288px;
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-  }
+  } */
+  /* .footer-form {
+    display: block;
+  } */
 }
 
 /* ............ПОРТФОЛІО................................. */
